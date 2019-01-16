@@ -30,7 +30,7 @@
     "value": "portal.com:3000"
   },
   "PORTAL_NETWORK_SCHEMA": {
-    "value": "https"
+    "value": "http"
   },
   "PORTAL_PORTAL_URL": {
     "value": "http://${LOCAL_IP}:3000"
