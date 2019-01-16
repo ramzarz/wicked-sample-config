@@ -14,7 +14,9 @@
   "design": 2,
   "envs": [
     "default",
-    "k8s"
+    "k8s",
+    "portal_local",
+    "docker"
   ],
   "env": 2
 }

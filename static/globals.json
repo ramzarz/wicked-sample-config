@@ -1,12 +1,14 @@
 {
-  "version": 6,
+  "version": 18,
   "title": "wicked.haufe.io API Portal",
   "footer": "&copy; 2016-2017 Your Company Ltd.",
   "api": {
-    "headerName": "X-ApiKey"
+    "headerName": "X-ApiKey",
+    "apiUserGroup": "",
+    "echoUserGroup": ""
   },
   "network": {
-    "schema": "https",
+    "schema": "$PORTAL_NETWORK_SCHEMA",
     "portalHost": "$PORTAL_NETWORK_PORTALHOST",
     "apiHost": "$PORTAL_NETWORK_APIHOST",
     "apiUrl": "$PORTAL_API_URL",
@@ -140,5 +142,31 @@
     "host": "$PORTAL_SESSIONSTORE_HOST",
     "port": 6379,
     "password": ""
-  }
+  },
+  "kongAdapter": {
+    "useKongAdapter": true,
+    "ignoreList": [
+      "plugin-name"
+    ]
+  },
+  "portal": {
+    "authMethods": [
+      "default:local",
+      "default:google",
+      "default:github",
+      "default:twitter",
+      "default:oauth2",
+      "default:facebook",
+      "default:adfs"
+    ]
+  },
+  "storage": {
+    "type": "postgres",
+    "pgHost": "$PORTAL_STORAGE_PGHOST",
+    "pgPort": "5432",
+    "pgUser": "kong",
+    "pgPassword": "$PORTAL_STORAGE_PGPASSWORD",
+    "pgDatabase": "wicked"
+  },
+  "passwordStrategy": "PW_6_24"
 }

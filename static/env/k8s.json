@@ -33,16 +33,19 @@
   "PORTAL_MAILER_URL": {
     "value": "http://${HELM_NAME}-mailer.${K8S_NAMESPACE}.svc.cluster.local:3003"
   },
-  "PORTAL_NETWORK_PORTALHOST": {
-    "value": "portal.local"
-  },
   "PORTAL_PORTAL_URL": {
     "value": "http://${HELM_NAME}-portal.${K8S_NAMESPACE}.svc.cluster.local:3000"
   },
-  "PORTAL_NETWORK_APIHOST": {
-    "value": "api.portal.local"
-  },
   "PORTAL_SESSIONSTORE_HOST": {
     "value": "${HELM_NAME}-redis.${K8S_NAMESPACE}.svc.cluster.local"
+  },
+  "PORTAL_AUTHSERVER_URL": {
+    "value": "http://${HELM_NAME}-auth.${K8S_NAMESPACE}.svc.cluster.local:3010"
+  },
+  "PORTAL_ECHO_URL": {
+    "value": "http://${HELM_NAME}-api.${K8S_NAMESPACE}.svc.cluster.local:3009"
+  },
+  "PORTAL_STORAGE_PGHOST": {
+    "value": "${HELM_NAME}-kong-database.${K8S_NAMESPACE}.svc.cluster.local"
   }
 }

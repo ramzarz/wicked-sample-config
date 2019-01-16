@@ -6,8 +6,7 @@
     "uris": [
       "/petstore"
     ],
-    "strip_uri": true,
-    "http_if_terminated": true
+    "strip_uri": true
   },
   "plugins": []
 }
