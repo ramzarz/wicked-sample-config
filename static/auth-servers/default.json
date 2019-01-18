@@ -9,7 +9,7 @@
             "friendlyShort": "Username and Password",
             "friendlyLong": "Log in using a local username and password.",
             "config": {
-                "trustUsers": false
+                "trustUsers": true
             }
         }
     ],
